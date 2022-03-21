@@ -114,7 +114,8 @@ export default class PlayGrid {
       return;
     });
 
-    this.marbles.on("pointerover", (event: InteractionEvent) => {
+    this.marbles.on("pointermove", (event: InteractionEvent) => {
+      console.log(event);
       if (!this.currentColor) {
         return;
       }
